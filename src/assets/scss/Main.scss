@@ -1,0 +1,18 @@
+// general conf and vars
+@import './conf';
+@import './global';
+
+// components
+@import '../../../components/Header/header.scss';
+// @import '../../../components/Button/button.scss';
+@import '../../../components/Footer/footer.scss';
+
+// pages
+@import '../../../pages/About/about.scss';
+@import '../../../pages/Campaign/campaign.scss';
+@import '../../../pages/CampaignList/campaign-list.scss';
+@import '../../../pages/Chat/chat.scss';
+@import '../../../pages/Home/styles.scss';
+@import '../../../pages/FAQ/faq.scss';
+@import '../../../pages/Terms/terms.scss';
+@import '../../../pages/MyCampaigns/my-campaigns.scss';

@@ -1,0 +1,31 @@
+$breakpoint-tablet: 768px;
+$breakpoint-cellphone: 375px;
+
+.header-nav {
+  margin: 31px 99px 20px 128px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
+
+  .logo{
+    width: 270px;
+  }
+
+  .info-usuario{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+  }
+
+  span{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .header-nav img {
+    display: none;
+  }
+}

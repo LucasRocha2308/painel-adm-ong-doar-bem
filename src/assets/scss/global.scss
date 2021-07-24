@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Open+Sans:wght@400;600;700&display=swap');
+
+body{
+  background-color: $BG-PRIMARY-COLOR;
+}
+
+h1, h2, h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: $FONT-COLOR;
+}
+
+p, li, label, input, textarea, select {
+  font-family: 'Open Sans', sans-serif;
+  // color: $FONT-COLOR;
+}
+
+button {
+  font-family: 'Open Sans', sans-serif;
+}
