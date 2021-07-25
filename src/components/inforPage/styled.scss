@@ -4,47 +4,76 @@ body{
 }
 
 .main-content-space{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     margin: 3.3em 0 0 20em;
     width: 75%;
     height: 75vh;
     border-radius: 30px;
-
-    .main-content{
-        padding: 2rem 2rem 2rem 4rem;
-    }
-
-    #search-user{
-        width: 30%;
-        padding: 5px;
-        border: 1px solid lightgray;
-        border-radius: 5px;
-    }
+    
 
     .button-page {
         border: none;
         background-color: transparent;
         cursor: pointer;
     }
-
-    .users-table{
-        padding: 4em 2em 2em 0;
-
-        table{
-            width: 100%;
-            border: 1px solid lightgray;
-            border-collapse: collapse;
-
-            .icon{
-                margin: 1px 0 0 10px;
-            }
-
-            td, th{
-                border: 1px solid lightgray;
-                text-align: left;
-                padding: 8px;
-            }
-        }
+    .main-ifor {
+        background-color: white;
+        border-radius: 30px;
+        margin-left: 100px;
+        max-width: 75%;
+        height: max-content;
+        padding: 30px;
     }
 
+    
+
+    .imagem-user {
+        
+        width: 190px;
+        display: block;
+        margin-left: 300px;
+        height: 150px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        object-fit:contain;
+    }
+    
+    .input-fone {
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        :hover {
+            border: transparent;
+        }
+    }
+    .form-estilizado {
+        margin: auto;
+    }
+
+    .cards-input {
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .label-right {
+        margin-right: 10px;
+    }
+
+    .button {
+        margin-left:60px;
+    }
+    .input-invisibel {
+        opacity: 0;
+        position: absolute;
+        top: -250px;
+    }
+
+    .imagem-icon {
+        margin: 5px 0 5px 550px;
+        ::after{
+            background-color: transparent;
+        }
+    }
 }
+
