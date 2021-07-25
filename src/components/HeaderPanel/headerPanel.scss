@@ -25,17 +25,56 @@ $breakpoint-cellphone: 375px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
   }
-
-  
 
   span{
     font-size: 20px;
   }
 
   .usuario{
-    width: 80px;
+    width: 70px;
+  }
+
+  .dropdown-user{
+    position: relative;
+    display: inline-block;
+    float: right;
+    padding: 15px;
+  }
+
+  .dropdown-user:hover .dropdown-user-content{
+    display: block;
+  }
+
+  .dropdown-user-content{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    min-width: 160px;
+    z-index: 1;
+    
+
+    a{
+      display: block;
+      text-decoration: none;
+      padding: 1rem;
+      font-size: .82rem;
+    }
+
+    a:hover{
+      background-color: #ddd;
+    }
+
+    a:visited{
+      color: inherit;
+    }
+
+    .dropdown-icons{
+      margin-right: 10px;
+    }
   }
 
 }
