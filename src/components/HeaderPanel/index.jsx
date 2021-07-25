@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import logo from '../../assets/img/logo_menu.png'
 import fotoUsuario from '../../assets/img/fotoUsuario.png'
-import { AiOutlineDown } from 'react-icons/ai'
+import { AiOutlineDown, AiOutlineTeam, AiOutlineMessage, AiOutlineLogout } from 'react-icons/ai'
 
 import './headerPanel.scss'
 
@@ -13,7 +13,7 @@ const HeaderPanel = () => {
     <header>
       <nav className='header-nav'>
         <Link to='/'>
-        <img className="logo" src={logo} alt='Logo Doar Bem' />
+          <img className="logo" src={logo} alt='Logo Doar Bem' />
         </Link>
         <div className="info__usuario">
           <div className="info__usuario-descricao">
@@ -21,8 +21,16 @@ const HeaderPanel = () => {
             <p>Administradora</p>
           </div>
 
-            <img className="usuario" src={fotoUsuario} alt="foto usuario" />
-            <AiOutlineDown/>
+          <img className="usuario" src={fotoUsuario} alt="foto usuario" />
+
+          <div className="dropdown-user">
+            <AiOutlineDown size={20} />
+            <div className="dropdown-user-content">
+              <a href=""> <AiOutlineTeam size={18} className="dropdown-icons" /> Sua Conta</a>
+              <a href=""> <AiOutlineMessage size={18} className="dropdown-icons" /> Mensagem</a>
+              <a href=""> <AiOutlineLogout size={18} className="dropdown-icons" /> Sair</a>
+            </div>
+          </div>
         </div>
       </nav>
     </header>

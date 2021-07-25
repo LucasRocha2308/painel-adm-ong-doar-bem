@@ -22,7 +22,7 @@ const MenuLateral = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/">
+                        <Link to="/campanha">
                             <div className="content">
                                 <img src={campanha} alt="icone de campanha" />
                                 <span> Campanha </span>
@@ -30,7 +30,7 @@ const MenuLateral = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/">
+                        <Link to="/doador">
                             <div className="content">
                                 <img src={doador} alt="icone de doador" />
                                 <span> Doador </span>
@@ -38,23 +38,23 @@ const MenuLateral = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/">
+                        <Link to="/ong">
                             <div className="content">
                                 <img src={ong} alt="icone de ONG" />
                                 <span> Ong </span>
                             </div>
                         </Link>
                     </li>
-                    <li>
-                        <Link to="/">
+                    {/* <li>
+                        <Link to="/aquisicao">
                             <div className="content">
                                 <img src={aquisicao} alt="icone de aquisição" />
                                 <span> Aquisição </span>
                             </div>
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
-                        <Link to="/">
+                        <Link to="/suporte">
                             <div className="content">
                                 <img src={aquisicao} alt="icone de suporte" />
                                 <span> Suporte </span>
