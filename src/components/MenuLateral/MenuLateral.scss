@@ -7,7 +7,7 @@
 
 .sidebar{
     background-color: white;
-    color: black;
+    color: rgb(0, 0, 0, 0.3);
     margin: 2em 0 0 2em;
     width: 15em;
     height: 75vh;
@@ -35,7 +35,7 @@
     }
     
     li{
-        font-weight: bold;
+        // font-weight:700;
         padding: 0.8rem 0 2rem 1rem;
         cursor: pointer;
     }
@@ -48,11 +48,11 @@
         color: #313131;
     }
 
-    // li:first-child{
-    //     //  background-color: #62BEBA;
-    //     //  color: white;
-    //     font-weight: bold;
-    //  }
+     li:first-child{
+          color: white;
+         font-weight: bolder;
+         color: rgb(0, 0, 0, 0.9);
+      }
 
     // li:hover{
     //     background-color: #62BEBA;

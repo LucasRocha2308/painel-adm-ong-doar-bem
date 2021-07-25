@@ -13,15 +13,31 @@ $breakpoint-cellphone: 375px;
     width: 220px;
   }
 
-  .info-usuario{
-   display: flex;
-   align-items: center;
-   gap: 20px;
+  .info__usuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   }
+
+  .info__usuario-descricao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
   }
+
+  
 
   span{
     font-size: 20px;
   }
+
+  .usuario{
+    width: 80px;
+  }
+
 }
 
 @media (max-width: $breakpoint-tablet) {

@@ -15,8 +15,12 @@ const HeaderPanel = () => {
         <Link to='/'>
         <img className="logo" src={logo} alt='Logo Doar Bem' />
         </Link>
-        <div className="info-usuario">
+        <div className="info__usuario">
+          <div className="info__usuario-descricao">
             <span>Maria de Serrão</span>
+            <p>Administradora</p>
+          </div>
+
             <img className="usuario" src={fotoUsuario} alt="foto usuario" />
             <AiOutlineDown/>
         </div>
