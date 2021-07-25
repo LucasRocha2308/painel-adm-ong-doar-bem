@@ -8,9 +8,14 @@ function AppRoutes() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={AdministrationPanel} />
-
         <Route exact path="/information" component={information} />
-
+        <Route path="/" exact component={AdministrationPanel} />
+        <Route path="/" exact component={AdministrationPanel} />
+        <Route path="/" exact component={AdministrationPanel} />
+        <Route path="/" exact component={AdministrationPanel} />
+        <Route path="/" exact component={AdministrationPanel} />
+        <Route path="/" exact component={AdministrationPanel} />
+        <Route path="/" exact component={AdministrationPanel} />
       </Switch>
     </BrowserRouter>
   );
