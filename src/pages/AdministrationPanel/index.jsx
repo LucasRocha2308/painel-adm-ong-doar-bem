@@ -1,5 +1,6 @@
 import HeaderPanel from "../../components/HeaderPanel";
 import MenuLateral from "../../components/MenuLateral";
+import FooterPanel from "../../components/FooterPanel";
 import { AiOutlineDown, AiFillDelete, AiOutlineUserAdd } from 'react-icons/ai';
 
 import './styles.scss'
@@ -45,16 +46,17 @@ const AdministrationPanel = () => {
                 <td>94</td>
                 <td><AiFillDelete size={20} /></td>
               </tr>
-              <tr>
+              {/* <tr>
                 <td>Eve</td>
                 <td>Jackson</td>
                 <td>94</td>
                 <td><AiFillDelete size={20} /></td>
-              </tr>
+              </tr> */}
             </table>
           </div>
         </div>
       </div>
+      <FooterPanel/>
     </div>
   );
 };
