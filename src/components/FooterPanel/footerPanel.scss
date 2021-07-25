@@ -1,0 +1,67 @@
+@import "../../assets/scss/conf";
+
+.mainSection {
+  padding: 10px 0;
+  background-color: $BG-FOOTER-COLOR;
+  font-weight: 600;
+  margin-top: 70px;
+  color: black;
+
+  p {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 15px auto;
+  }
+
+  a {
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.8);
+  }
+
+  a:hover{
+    color: rgb(0, 0, 0, 0.4);
+  }
+
+  .wrapper {
+    max-width: 1120px;
+    margin: auto;
+    margin-bottom: 60px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    .column {
+      margin: 0 5px;
+    }
+
+    .titles {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 20px;
+      margin: 25px auto;
+    }
+
+    .logo-backers {
+      width: 110px;
+    }
+
+    .logo-social-media {
+      width: 46px;
+    }
+
+    .margin-logo {
+      margin-right: 15px;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    margin-bottom: -10px;
+
+    span {
+      font-weight: normal;
+    }
+  }
+}
