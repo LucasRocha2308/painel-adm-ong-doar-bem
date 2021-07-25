@@ -7,12 +7,18 @@ import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 import Button from "@material-ui/core/Button";
 import './styled.scss'
+import useRequestData from '../../constants/requered'
 
-const information = () => {
+const Information = () => {
 
     const [form, onChange, clear ] = useForm({name: "", cpf: "", birth:"", fone:"",
     address:"", city:"", state:"", email:"", 
     occupation:"", register:""})
+
+    const submit = () => {
+        useRequestData(form)
+        clear()
+    }
 
     console.log(form)
     
@@ -194,7 +200,9 @@ const information = () => {
                         
                         
                         <Button className="button"
-                        variant="contained" color="primary"
+                        onClick={submit}
+                        variant="contained"
+                        color="primary"
                         >Cadastrar</Button>
                    </form>
                 </div>
@@ -205,4 +213,4 @@ const information = () => {
     )
 }
 
-export default information;
+export default Information;
