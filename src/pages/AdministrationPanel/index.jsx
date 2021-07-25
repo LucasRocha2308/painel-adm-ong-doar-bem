@@ -1,5 +1,6 @@
 import HeaderPanel from "../../components/HeaderPanel";
 import MenuLateral from "../../components/MenuLateral";
+import { goToInfor } from "../../routes/coodination";
 
 // import ContentCard from "../../components/ContentCard";
 
@@ -8,8 +9,11 @@ import FooterPanel from "../../components/FooterPanel";
 import { AiOutlineDown, AiFillDelete, AiOutlineUserAdd } from 'react-icons/ai';
 
 import './styles.scss'
+import { useHistory } from "react-router";
 
 const AdministrationPanel = () => {
+  const history = useHistory()
+
   return (
     <div className="container">
       <HeaderPanel />
@@ -26,7 +30,7 @@ const AdministrationPanel = () => {
                 <th>Nome<AiOutlineDown size={12} className="icon"/></th>
                 <th>Função<AiOutlineDown size={12} className="icon"/></th>
                 <th>Último Acesso<AiOutlineDown size={12} className="icon"/></th>
-                <th><AiOutlineUserAdd size={22} /></th>
+                <th><button className="button-page " onClick={() => goToInfor(history)} ><AiOutlineUserAdd size={22} /></button></th>
               </tr>
               <tr>
                 <td>Jill</td>
