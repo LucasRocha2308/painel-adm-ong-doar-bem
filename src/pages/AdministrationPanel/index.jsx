@@ -1,6 +1,10 @@
 import HeaderPanel from "../../components/HeaderPanel";
 import MenuLateral from "../../components/MenuLateral";
+
+import ContentCard from "../../components/ContentCard";
+=======
 import FooterPanel from "../../components/FooterPanel";
+
 import { AiOutlineDown, AiFillDelete, AiOutlineUserAdd } from 'react-icons/ai';
 
 import './styles.scss'
@@ -10,6 +14,8 @@ const AdministrationPanel = () => {
     <div className="container">
       <HeaderPanel />
       <MenuLateral />
+
+      <ContentCard />
       <div className="main-content-space">
         <div className="main-content">
           <h1>Olá mundo</h1>
@@ -57,6 +63,7 @@ const AdministrationPanel = () => {
         </div>
       </div>
       <FooterPanel/>
+
     </div>
   );
 };
