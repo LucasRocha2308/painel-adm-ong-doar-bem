@@ -7,6 +7,13 @@ function AppRoutes() {
     <>
       <Switch>
         <Route path="/" exact component={AdministrationPanel} />
+        <Route path="/" exact component={AdministrationPanel} />
+        <Route path="/" exact component={AdministrationPanel} />
+        <Route path="/" exact component={AdministrationPanel} />
+        <Route path="/" exact component={AdministrationPanel} />
+        <Route path="/" exact component={AdministrationPanel} />
+        <Route path="/" exact component={AdministrationPanel} />
+        <Route path="/" exact component={AdministrationPanel} />
       </Switch>
     </>
   );
