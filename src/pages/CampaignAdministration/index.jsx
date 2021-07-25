@@ -6,6 +6,9 @@ import MenuLateral from "../../components/MenuLateral";
 import FooterPanel from "../../components/FooterPanel";
 
 import { AiOutlineDown, AiFillDelete, AiOutlineUserAdd } from 'react-icons/ai';
+import azul from '../../assets/img/EllipseAzul.png'
+import vermelho from '../../assets/img/EllipseVermelha.png'
+import verde from '../../assets/img/EllipseVerde.png'
 
 import './styles.scss'
 
@@ -24,32 +27,32 @@ const CampaignAdministration = () => {
             <table>
               <tr>
                 <th>Nome<AiOutlineDown size={12} className="icon"/></th>
-                <th>Função<AiOutlineDown size={12} className="icon"/></th>
-                <th>Último Acesso<AiOutlineDown size={12} className="icon"/></th>
+                <th>ONG<AiOutlineDown size={12} className="icon"/></th>
+                <th>Status<AiOutlineDown size={12} className="icon"/></th>
                 <th><AiOutlineUserAdd size={22} /></th>
               </tr>
               <tr>
-                <td>Jill</td>
-                <td>Smith</td>
-                <td>50</td>
+                <td>Campanha Sol</td>
+                <td>Globo</td>
+                <td > <div className="info-separacao"> APROVADA <img src={verde} alt="ellipse verde"  /></div></td>
                 <td><AiFillDelete size={20} /></td>
               </tr>
               <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
+                <td>Campanha de Sucesso</td>
+                <td>Sempre Feliz</td>
+                <td > <div className="info-separacao"> APROVADA <img src={verde} alt="ellipse verde"  /></div></td>
                 <td><AiFillDelete size={20} /></td>
               </tr>
               <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
+                <td>Campanha Trabalho Já</td>
+                <td>ONG para todes</td>
+                <td > <div className="info-separacao"> EM ANDAMENTO <img src={azul} alt="ellipse verde"  /></div></td>
                 <td><AiFillDelete size={20} /></td>
               </tr>
               <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
+                <td>Campanha do Agasalho </td>
+                <td>Juntos somos mais</td>
+                <td > <div className="info-separacao"> RECUSADA <img src={vermelho} alt="ellipse verde"  /></div></td>
                 <td><AiFillDelete size={20} /></td>
               </tr>
               {/* <tr>

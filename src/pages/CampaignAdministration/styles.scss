@@ -33,6 +33,12 @@ body{
                 margin: 1px 0 0 10px;
             }
 
+            .info-separacao{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
             td, th{
                 border: 1px solid lightgray;
                 text-align: left;

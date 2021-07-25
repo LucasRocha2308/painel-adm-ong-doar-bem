@@ -26,9 +26,9 @@ const HeaderPanel = () => {
           <div className="dropdown-user">
             <AiOutlineDown size={20} />
             <div className="dropdown-user-content">
-              <a href=""> <AiOutlineTeam size={18} className="dropdown-icons" /> Sua Conta</a>
-              <a href=""> <AiOutlineMessage size={18} className="dropdown-icons" /> Mensagem</a>
-              <a href=""> <AiOutlineLogout size={18} className="dropdown-icons" /> Sair</a>
+              <a href="."> <AiOutlineTeam size={18} className="dropdown-icons" /> Sua Conta</a>
+              <a href="."> <AiOutlineMessage size={18} className="dropdown-icons" /> Mensagem</a>
+              <a href="."> <AiOutlineLogout size={18} className="dropdown-icons" /> Sair</a>
             </div>
           </div>
         </div>
