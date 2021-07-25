@@ -18,6 +18,8 @@
         text-decoration: none;
     }
 
+   
+
     ul{
         list-style-type: none;
         display: flex;
@@ -37,6 +39,10 @@
         padding: 0.8rem 0 2rem 1rem;
         cursor: pointer;
     }
+
+    span:hover{
+        color: rgb(0, 0, 0, 0.4);
+      }
     
     span{
         color: #313131;
