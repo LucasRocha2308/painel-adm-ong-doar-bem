@@ -1,13 +1,14 @@
-import HeaderPanel from "../../components/HeaderPanel"
-import MenuLateral from "../../components/MenuLateral"
+import HeaderPanel from "../../components/HeaderPanel";
+import MenuLateral from "../../components/MenuLateral";
+import './styles.scss'
 
 const AdministrationPanel = () => {
-    return(
-        <>
-        <HeaderPanel/>
-        <MenuLateral/>
-        </>
-    )
-}
+  return (
+    <div className="container">
+      <HeaderPanel />
+      <MenuLateral />
+    </div>
+  );
+};
 
-export default AdministrationPanel
+export default AdministrationPanel;

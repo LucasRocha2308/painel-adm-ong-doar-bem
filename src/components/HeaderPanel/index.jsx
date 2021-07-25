@@ -5,7 +5,7 @@ import logo from '../../assets/img/logo_menu.png'
 import fotoUsuario from '../../assets/img/fotoUsuario.png'
 import { AiOutlineDown } from 'react-icons/ai'
 
-import './header.scss'
+import './headerPanel.scss'
 
 const HeaderPanel = () => {
 
