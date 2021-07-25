@@ -1,14 +1,18 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import {BrowserRouter, Switch, Route } from "react-router-dom";
 import AdministrationPanel from "../pages/AdministrationPanel";
+import information from "../components/inforPage/inforPage";
 
 function AppRoutes() {
   return (
-    <>
+    <BrowserRouter>
       <Switch>
         <Route path="/" exact component={AdministrationPanel} />
+
+        <Route exact path="/information" component={information} />
+
       </Switch>
-    </>
+    </BrowserRouter>
   );
 }
 
