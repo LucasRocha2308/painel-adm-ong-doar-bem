@@ -45,14 +45,14 @@ const MenuLateral = () => {
                             </div>
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/aquisicao">
                             <div className="content">
                                 <img src={aquisicao} alt="icone de aquisição" />
                                 <span> Aquisição </span>
                             </div>
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link to="/suporte">
                             <div className="content">

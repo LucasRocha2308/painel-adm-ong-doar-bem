@@ -35,7 +35,7 @@
     }
     
     li{
-        // font-weight:700;
+        font-weight: bolder;
         padding: 0.8rem 0 2rem 1rem;
         cursor: pointer;
     }
@@ -48,11 +48,11 @@
         color: #313131;
     }
 
-     li:first-child{
-          color: white;
-         font-weight: bolder;
-         color: rgb(0, 0, 0, 0.9);
-      }
+    //  li:first-child{
+    //       color: white;
+    //      font-weight: bolder;
+    //      color: rgb(0, 0, 0, 0.9);
+    //   }
 
     // li:hover{
     //     background-color: #62BEBA;
