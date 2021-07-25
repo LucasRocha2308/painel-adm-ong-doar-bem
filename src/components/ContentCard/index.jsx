@@ -6,6 +6,7 @@ const ContentCard = () => {
     return (
         <div className="main-content-space">
             <div className="main-content">
+                children
             </div>
         </div>
     )
