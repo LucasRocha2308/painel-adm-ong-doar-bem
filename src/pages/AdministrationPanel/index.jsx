@@ -1,6 +1,6 @@
 import HeaderPanel from "../../components/HeaderPanel";
 import MenuLateral from "../../components/MenuLateral";
-import { goToCadastro } from "../../routes/coodination";
+import { goToCadastro, goToInformation } from "../../routes/coodination";
 
 // import ContentCard from "../../components/ContentCard";
 
@@ -13,6 +13,12 @@ import { useHistory } from "react-router";
 
 const AdministrationPanel = () => {
   const history = useHistory()
+
+  const InformacoesUser = localStorage.getItem("userData");
+  const userData = JSON.parse(InformacoesUser);
+  const remocerCadastro =  () => {
+    localStorage.removeItem("userData")
+  }
 
   return (
     <div className="container">
@@ -32,36 +38,12 @@ const AdministrationPanel = () => {
                 <th>Último Acesso<AiOutlineDown size={12} className="icon"/></th>
                 <th><button className="button-page " onClick={() => goToCadastro(history)} ><AiOutlineUserAdd size={22} /></button></th>
               </tr>
-              <tr>
-                <td>Jill</td>
-                <td>Smith</td>
+              <tr >
+                <td><button onClick={() => goToInformation(history)} className="button-page ">{userData.name}</button></td>
+                <td>{userData.occupation}</td>
                 <td>50</td>
-                <td><AiFillDelete size={20} /></td>
+                <td><button className="button-page "onClick={remocerCadastro}><AiFillDelete size={20}/></button></td>
               </tr>
-              <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
-                <td><AiFillDelete size={20} /></td>
-              </tr>
-              <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
-                <td><AiFillDelete size={20} /></td>
-              </tr>
-              <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
-                <td><AiFillDelete size={20} /></td>
-              </tr>
-              {/* <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
-                <td><AiFillDelete size={20} /></td>
-              </tr> */}
             </table>
           </div>
         </div>

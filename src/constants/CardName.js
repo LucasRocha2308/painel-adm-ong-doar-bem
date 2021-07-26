@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import IconButton from "@material-ui/core/IconButton";
 import PhotoCamera from "@material-ui/icons/PhotoCamera";
+import useForm from '../hook/useForm';
 
-const Card = () => {
+const Card = (props) => {
 
     const [avatar, setAvatar] = useState("")
     const hiddenFileInput = React.useRef(null);
+
+    const [form ] = useForm({ photo:""})
 
     const handleClick = e => {
         hiddenFileInput.current.click()
@@ -15,6 +18,7 @@ const Card = () => {
         const file = e.target.files[0];
         setAvatar({
             avatar: URL.createObjectURL(file)
+
         });
     
     }
@@ -41,7 +45,8 @@ const Card = () => {
 
               <input className="input-invisibel"
                 type="file"
-                name="photo"
+                name={"photo"}
+                value={form.photo}
                 ref={hiddenFileInput}
                 onChange={handleChangeImage.bind(avatar)}
             />
