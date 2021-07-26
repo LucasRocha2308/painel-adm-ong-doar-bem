@@ -26,7 +26,7 @@ const InfoAccount = () => {
     <div >
       <HeaderPanel />
       <MenuLateral />
-      <BlankTitle title="INFORMAÇÃO DA CONTA" user="CARMEM DE SERRÃO"/>
+      <BlankTitle />
       <ContentCard>
         <div className="campaign-options-space">
           <label htmlFor="name">Nome</label><br></br>

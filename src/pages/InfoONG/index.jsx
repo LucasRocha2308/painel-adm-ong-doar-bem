@@ -26,7 +26,7 @@ const InfoONG = () => {
     <div >
       <HeaderPanel />
       <MenuLateral />
-      <BlankTitle title="INFORMAÇÃO DA ONG" user="ONG PARA TODES" />
+      <BlankTitle />
       <ContentCard>
         <div className="campaign-options-space">
           <label htmlFor="organization">Organização</label><br></br>

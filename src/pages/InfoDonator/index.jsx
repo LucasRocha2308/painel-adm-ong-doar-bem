@@ -26,7 +26,7 @@ const InfoDonator = () => {
     <div >
       <HeaderPanel />
       <MenuLateral />
-      <BlankTitle title="INFORMAÇÃO DO DOADOR" user="NATÁLIA CASTRO" />
+      <BlankTitle />
       <ContentCard>
         <div className="campaign-options-space">
 
