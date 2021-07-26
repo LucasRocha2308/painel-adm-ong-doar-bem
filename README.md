@@ -3,34 +3,39 @@
 
 https://painel-adm-teste.vercel.app/
 
-Projeto desenvolvido através do programa Provi Hack4good, onde o desafio proposto para o Time 17 composto por Lucas Rocha,  a aplicação consiste na elaboração e desenvolvimento do Painel administrativo da Ong Doar Bem.
+Projeto desenvolvido através do programa Provi Hack4good, realizado no periódo de 23/07/2021 à 26/07/2021, onde o desafio proposto para o Time 17, consiste na aplicação e desenvolvimento do Painel Administrativo da Ong Doar Bem. O Time 17 foi composto pelos seguintes integrantes:
+
+Lucas Rocha - Front End Developer
+
+Patrícia Maria - Product Manager
+
+Caio Manfred - Data Scientist
+
+Elaine Cristina - Front End Developer
+
+Maria Serrão - Front End Developer
+
+Jefferson Chebom - Data Scientist
 
 
 
 
 ## Layout Web
-![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
+![Doar Bem](https://user-images.githubusercontent.com/86628677/126920461-eeb2720d-5186-45ac-9a1f-20373907e2de.PNG)
 
-## Layout web
-![Web 1](https://github.com/acenelio/assets/raw/main/sds1/web1.png)
-
-![Web 2](https://github.com/acenelio/assets/raw/main/sds1/web2.png)
-
-## Modelo conceitual
-![Modelo Conceitual](https://github.com/acenelio/assets/raw/main/sds1/modelo-conceitual.png)
 
 # Tecnologias utilizadas
-## Back end
 - Java
 - Spring Boot
 - JPA / Hibernate
 - Maven
+
 ## Front end
 - HTML / CSS / JS / TypeScript
 - ReactJS
 - React Native
-- Apex Charts
-- Expo
+
+
 ## Implantação em produção
 - Back end: Heroku
 - Front end web: Netlify
