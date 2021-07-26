@@ -79,7 +79,7 @@ $breakpoint-cellphone: 375px;
 
 }
 
-@media (max-width: $breakpoint-tablet) {
+@media (max-width: 768px) {
   .header-nav img {
     display: none;
   }
