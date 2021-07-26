@@ -3,7 +3,7 @@ import MenuLateral from "../../components/MenuLateral";
 // import ContentCard from "../../components/ContentCard";
 import FooterPanel from "../../components/FooterPanel";
 import { AiOutlineDown, AiFillDelete, AiOutlineUserAdd } from 'react-icons/ai';
-import { goToCadastro } from "../../routes/coodination";
+import { goToDonator } from "../../routes/coodination";
 import './styles.scss'
 import { useHistory } from "react-router-dom";
 
@@ -25,7 +25,7 @@ const DonorAdministration = () => {
                 <th>Nome<AiOutlineDown size={12} className="icon"/></th>
                 <th>Campanha<AiOutlineDown size={12} className="icon"/></th>
                 <th>Última doação<AiOutlineDown size={12} className="icon"/></th>
-                <th><button className="button-page " onClick={() => goToCadastro(history)} ><AiOutlineUserAdd size={22} /></button></th>
+                <th><button className="button-page " onClick={() => goToDonator(history)} ><AiOutlineUserAdd size={22} /></button></th>
               </tr>
               <tr>
                 <td>Alexandre Souza</td>
