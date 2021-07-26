@@ -56,7 +56,15 @@ $breakpoint-cellphone: 375px;
     min-width: 160px;
     z-index: 1;
     
-
+    .button-page {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      display: flex;
+      margin-left: 10px;
+      gap:5px;
+      margin-bottom: 10px;
+  }
     a{
       display: block;
       text-decoration: none;
