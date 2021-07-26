@@ -3,10 +3,12 @@ import MenuLateral from "../../components/MenuLateral";
 // import ContentCard from "../../components/ContentCard";
 import FooterPanel from "../../components/FooterPanel";
 import { AiOutlineDown, AiFillDelete, AiOutlineUserAdd } from 'react-icons/ai';
-
+import { goToOng } from "../../routes/coodination";
 import './styles.scss'
+import { useHistory } from "react-router-dom";
 
 const DonorAdministration = () => {
+  const history = useHistory()
   return (
     <div className="container">
       <HeaderPanel />
@@ -15,7 +17,7 @@ const DonorAdministration = () => {
       {/* <ContentCard> */}
       <div className="main-content-space">
         <div className="main-content">
-          <h1>Olá mundo DOADOR</h1>
+          <h1>Administração das ONG's</h1>
           <input type="text" name="search-user" id="search-user" placeholder="Pesquisar Usuário" />
           <div className="users-table">
             <table>
@@ -23,7 +25,7 @@ const DonorAdministration = () => {
                 <th>Nome<AiOutlineDown size={12} className="icon"/></th>
                 <th>Área de atuação<AiOutlineDown size={12} className="icon"/></th>
                 <th>Último acesso<AiOutlineDown size={12} className="icon"/></th>
-                <th><AiOutlineUserAdd size={22} /></th>
+                <th><button className="button-page " onClick={() => goToOng(history)} ><AiOutlineUserAdd size={22} /></button></th>
               </tr>
               <tr>
                 <td>ONG para todes</td>

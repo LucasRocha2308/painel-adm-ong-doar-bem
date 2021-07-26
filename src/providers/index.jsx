@@ -1,13 +1,13 @@
-// import { AuthProvider } from "./Auth";
+import { AuthProvider } from "./Auth";
 import { CartProvider } from "./Cart";
 
 
 
 const Providers = ({ children }) => {
   return (
-    // <AuthProvider>
+     <AuthProvider>
       <CartProvider>{children}</CartProvider>
-    // </AuthProvider>
+    </AuthProvider>
   );
 };
 
