@@ -21,7 +21,7 @@ const CampaignAdministration = () => {
       {/* <ContentCard> */}
       <div className="main-content-space">
         <div className="main-content">
-          <h1>Olá mundo CAMPANHA</h1>
+          <h1>Administração de Campanhas</h1>
           <input type="text" name="search-user" id="search-user" placeholder="Pesquisar Usuário" />
           <div className="users-table">
             <table>

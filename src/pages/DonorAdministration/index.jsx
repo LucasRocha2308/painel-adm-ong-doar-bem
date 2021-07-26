@@ -15,7 +15,7 @@ const DonorAdministration = () => {
       {/* <ContentCard> */}
       <div className="main-content-space">
         <div className="main-content">
-          <h1>Olá mundo DOADOR</h1>
+          <h1>Administração de Doadores</h1>
           <input type="text" name="search-user" id="search-user" placeholder="Pesquisar Usuário" />
           <div className="users-table">
             <table>

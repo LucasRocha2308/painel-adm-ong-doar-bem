@@ -1,5 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
+import logo from '../../assets/img/logo_menu.png'
 
 import './styles.scss'
 
@@ -13,7 +14,12 @@ const SignInAdministration = ( ) => {
 
     return (
         <div className="container__form">
-            <h1>Login</h1>
+             <img className="logo" src={logo} alt='Logo Doar Bem' />
+            <div className="info_header">
+                <h1>Login</h1>
+               
+            </div>
+
             <div className="form">
                 <label htmlFor="">E-mail</label>
                 <input type="text" />
