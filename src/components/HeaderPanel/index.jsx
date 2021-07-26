@@ -1,13 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 import logo from '../../assets/img/logo_menu.png'
 import fotoUsuario from '../../assets/img/fotoUsuario.png'
 import { AiOutlineDown, AiOutlineTeam, AiOutlineMessage, AiOutlineLogout } from 'react-icons/ai'
 
 import './headerPanel.scss'
+import { useAuth } from '../../providers/Auth'
 
 const HeaderPanel = () => {
+const history = useHistory()
+const { logout } = useAuth()
 
   return (
     <header>
@@ -28,7 +31,7 @@ const HeaderPanel = () => {
             <div className="dropdown-user-content">
               <a href="."> <AiOutlineTeam size={18} className="dropdown-icons" /> Sua Conta</a>
               <a href="."> <AiOutlineMessage size={18} className="dropdown-icons" /> Mensagem</a>
-              <a href="."> <AiOutlineLogout size={18} className="dropdown-icons" /> Sair</a>
+              <button className="button-page "  onClick={() => logout(history)}> <AiOutlineLogout size={18} className="dropdown-icons" /> Sair</button>
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ const MenuLateral = () => {
             <nav >
                 <ul>
                     <li>
-                        <Link to="/">
+                        <Link to="/usuario">
                             <div className="content">
                                 <img src={usuario} alt="icone de usuario" />
                                 <span> Usuário </span>

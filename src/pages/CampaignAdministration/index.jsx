@@ -1,6 +1,6 @@
 import HeaderPanel from "../../components/HeaderPanel";
 import MenuLateral from "../../components/MenuLateral";
-
+import { goToCampaing } from "../../routes/coodination";
 // import ContentCard from "../../components/ContentCard";
 
 import FooterPanel from "../../components/FooterPanel";
@@ -11,8 +11,11 @@ import vermelho from '../../assets/img/EllipseVermelha.png'
 import verde from '../../assets/img/EllipseVerde.png'
 
 import './styles.scss'
+import { useHistory } from "react-router-dom";
 
 const CampaignAdministration = () => {
+  const history = useHistory()
+
   return (
     <div className="container">
       <HeaderPanel />
@@ -21,7 +24,7 @@ const CampaignAdministration = () => {
       {/* <ContentCard> */}
       <div className="main-content-space">
         <div className="main-content">
-          <h1>Olá mundo CAMPANHA</h1>
+          <h1>Administração de Campanhas</h1>
           <input type="text" name="search-user" id="search-user" placeholder="Pesquisar Usuário" />
           <div className="users-table">
             <table>
@@ -29,7 +32,7 @@ const CampaignAdministration = () => {
                 <th>Nome<AiOutlineDown size={12} className="icon" /></th>
                 <th>ONG<AiOutlineDown size={12} className="icon" /></th>
                 <th>Status<AiOutlineDown size={12} className="icon" /></th>
-                <th><AiOutlineUserAdd size={22} /></th>
+                <th><button className="button-page " onClick={() => goToCampaing(history)} ><AiOutlineUserAdd size={22} /></button></th>
               </thead>
               <tbody>
                 <tr>

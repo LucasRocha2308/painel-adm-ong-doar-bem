@@ -25,7 +25,7 @@ const InfoCampaign = () => {
     <div >
       <HeaderPanel />
       <MenuLateral />
-      <BlankTitle />
+      <BlankTitle title="INFORMAÇÃO DA CAMPANHA" user="CAMPANHA SOL" />
       <ContentCard>
         <div className="campaign-options-space">
 
