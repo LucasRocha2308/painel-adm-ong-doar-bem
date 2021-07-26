@@ -10,7 +10,7 @@ import aquisicao from '../../assets/img/aquisicao.png'
 const MenuLateral = () => {
     return (
         <>
-        <aside class="sidebar">
+        <aside className="sidebar">
             <nav >
                 <ul>
                     <li>
