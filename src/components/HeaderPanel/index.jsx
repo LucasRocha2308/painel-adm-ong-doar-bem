@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React, { useState } from 'react'
+import { Link, useHistory } from 'react-router-dom'
+import { goToInformation } from '../../routes/coodination'
 import logo from '../../assets/img/logo_menu.png'
 import fotoUsuario from '../../assets/img/fotoUsuario.png'
 import { AiOutlineDown, AiOutlineTeam, AiOutlineMessage, AiOutlineLogout } from 'react-icons/ai'
@@ -8,6 +8,9 @@ import { AiOutlineDown, AiOutlineTeam, AiOutlineMessage, AiOutlineLogout } from 
 import './headerPanel.scss'
 
 const HeaderPanel = () => {
+
+  const history = useHistory()
+
 
   return (
     <header>
@@ -26,7 +29,7 @@ const HeaderPanel = () => {
           <div className="dropdown-user">
             <AiOutlineDown size={20} />
             <div className="dropdown-user-content">
-              <a href=""> <AiOutlineTeam size={18} className="dropdown-icons" /> Sua Conta</a>
+             <a><button className="button" onClick={() => goToInformation(history)}> <AiOutlineTeam size={18} className="dropdown-icons" /> Sua Conta</button></a>
               <a href=""> <AiOutlineMessage size={18} className="dropdown-icons" /> Mensagem</a>
               <a href=""> <AiOutlineLogout size={18} className="dropdown-icons" /> Sair</a>
             </div>

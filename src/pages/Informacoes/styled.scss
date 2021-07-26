@@ -14,38 +14,32 @@ body{
         padding: 2rem 2rem 2rem 4rem;
     }
 
-    #search-user{
+    .search-user{
         width: 30%;
         padding: 5px;
         border: 1px solid lightgray;
         border-radius: 5px;
     }
 
-    .button-page {
+    .button-none {
         border: none;
         background-color: transparent;
         cursor: pointer;
+        width: 35px;
+
     }
 
+    .name{
+        font-family: 'Courier New', Courier, monospace;
+    }
 
-    .users-table{
-        padding: 4em 2em 2em 0;
-
-        table{
-            width: 100%;
-            border: 1px solid lightgray;
-            border-collapse: collapse;
-
-            .icon{
-                margin: 1px 0 0 10px;
-            }
-
-            td, th{
-                border: 1px solid lightgray;
-                text-align: left;
-                padding: 8px;
-            }
-        }
+    .main-ifor {
+        background-color: white;
+        border-radius: 30px;
+        margin-left: 100px;
+        max-width: 75%;
+        height: max-content;
+        padding: 30px;
     }
 
 }

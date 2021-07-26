@@ -1,6 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
+
+import HeaderPanel from "../../components/HeaderPanel";
+import MenuLateral from "../../components/MenuLateral";
 import useForm from '../../hook/useForm';
 import Card from '../../constants/CardName';
 import InputLabel from '@material-ui/core/InputLabel';
@@ -9,7 +12,7 @@ import Button from "@material-ui/core/Button";
 import './styled.scss'
 import useRequestData from '../../constants/requered'
 
-const Information = () => {
+const EditarPage = () => {
 
     const [form, onChange, clear ] = useForm({name: "", cpf: "", birth:"", fone:"",
     address:"", city:"", state:"", email:"", 
@@ -23,9 +26,12 @@ const Information = () => {
     return (
         <div>
 
+            <HeaderPanel/>
+            <MenuLateral/>
+
             <div className="main-content-space" >
                 <div className="main-content">
-                     <h1>Informações da conta</h1>
+                     <h1>Editar informaçoes da conta</h1>
                 </div>
 
                 <div>
@@ -202,7 +208,7 @@ const Information = () => {
                         onClick={submit}
                         variant="contained"
                         color="primary"
-                        >Cadastrar</Button>
+                        >Editar</Button>
                    </form>
                 </div>
             </div>
@@ -212,4 +218,4 @@ const Information = () => {
     )
 }
 
-export default Information;
+export default EditarPage;
