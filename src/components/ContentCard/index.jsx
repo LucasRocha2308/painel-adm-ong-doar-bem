@@ -2,11 +2,11 @@ import React from 'react'
 
 import './ContentCard.scss'
 
-const ContentCard = () => {
+const ContentCard = ( {children}) => {
     return (
         <div className="main-content-space">
             <div className="main-content">
-                children
+               {children}
             </div>
         </div>
     )

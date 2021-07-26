@@ -42,7 +42,7 @@ $breakpoint-cellphone: 375px;
   .dropdown-user{
     position: relative;
     display: inline-block;
-    float: right;
+    // float: right;
     padding: 15px;
   }
 
@@ -60,7 +60,15 @@ $breakpoint-cellphone: 375px;
     min-width: 160px;
     z-index: 1;
     
-
+    .button-page {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      display: flex;
+      margin-left: 10px;
+      gap:5px;
+      margin-bottom: 10px;
+  }
     a{
       display: block;
       text-decoration: none;
@@ -83,7 +91,7 @@ $breakpoint-cellphone: 375px;
 
 }
 
-@media (max-width: $breakpoint-tablet) {
+@media (max-width: 768px) {
   .header-nav img {
     display: none;
   }

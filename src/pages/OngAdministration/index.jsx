@@ -1,15 +1,14 @@
 import HeaderPanel from "../../components/HeaderPanel";
 import MenuLateral from "../../components/MenuLateral";
-
 // import ContentCard from "../../components/ContentCard";
-
 import FooterPanel from "../../components/FooterPanel";
-
 import { AiOutlineDown, AiFillDelete, AiOutlineUserAdd } from 'react-icons/ai';
-
+import { goToOng } from "../../routes/coodination";
 import './styles.scss'
+import { useHistory } from "react-router-dom";
 
-const OngAdministration = () => {
+const DonorAdministration = () => {
+  const history = useHistory()
   return (
     <div className="container">
       <HeaderPanel />
@@ -18,38 +17,38 @@ const OngAdministration = () => {
       {/* <ContentCard> */}
       <div className="main-content-space">
         <div className="main-content">
-          <h1>Olá mundo ONG</h1>
+          <h1>Administração das ONG's</h1>
           <input type="text" name="search-user" id="search-user" placeholder="Pesquisar Usuário" />
           <div className="users-table">
             <table>
               <tr>
                 <th>Nome<AiOutlineDown size={12} className="icon"/></th>
-                <th>Função<AiOutlineDown size={12} className="icon"/></th>
-                <th>Último Acesso<AiOutlineDown size={12} className="icon"/></th>
-                <th><AiOutlineUserAdd size={22} /></th>
+                <th>Área de atuação<AiOutlineDown size={12} className="icon"/></th>
+                <th>Último acesso<AiOutlineDown size={12} className="icon"/></th>
+                <th><button className="button-page " onClick={() => goToOng(history)} ><AiOutlineUserAdd size={22} /></button></th>
               </tr>
               <tr>
-                <td>Jill</td>
-                <td>Smith</td>
-                <td>50</td>
+                <td>ONG para todes</td>
+                <td>Humanitária</td>
+                <td>01/01/2001 às 15h32</td>
                 <td><AiFillDelete size={20} /></td>
               </tr>
               <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
+                <td>Globo</td>
+                <td>Educação</td>
+                <td>10101/2001 às 19h37</td>
                 <td><AiFillDelete size={20} /></td>
               </tr>
               <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
+              <td>Globo</td>
+                <td>Educação</td>
+                <td>10101/2001 às 19h37</td>
                 <td><AiFillDelete size={20} /></td>
               </tr>
               <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
+              <td>ONG para todes</td>
+                <td>Humanitária</td>
+                <td>01/01/2001 às 15h32</td>
                 <td><AiFillDelete size={20} /></td>
               </tr>
               {/* <tr>
@@ -69,4 +68,4 @@ const OngAdministration = () => {
   );
 };
 
-export default OngAdministration;
+export default DonorAdministration;

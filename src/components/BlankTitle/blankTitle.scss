@@ -1,0 +1,67 @@
+.title-space{
+    margin: 2em 0 2em 20em;
+    width: 77%;
+    height: 50vh;
+
+    .title-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+
+        h1{
+            font-weight: bold;
+            font-size: 2.5em;
+        }
+
+        p{
+            font-size: 1.2em;
+        }
+    }
+
+    .imagem-user {
+        display: block;
+        margin: 1.2em 0 0 7em;
+        height: 200px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+    }
+    
+    .input-fone {
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        :hover {
+            border: transparent;
+        }
+    }
+    .form-estilizado {
+        margin: auto;
+    }
+
+    .cards-input {
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .label-right {
+        margin-right: 10px;
+    }
+
+    .button {
+        margin-left:60px;
+    }
+    .input-invisibel {
+        opacity: 0;
+        position: absolute;
+        top: -250px;
+    }
+
+    .imagem-icon {
+        margin: 5px 0 5px 400px;
+        ::after{
+            background-color: transparent;
+        }
+    }
+}

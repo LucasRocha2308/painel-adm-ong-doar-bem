@@ -10,11 +10,11 @@ import aquisicao from '../../assets/img/aquisicao.png'
 const MenuLateral = () => {
     return (
         <>
-        <aside class="sidebar">
+        <aside className="sidebar">
             <nav >
                 <ul>
                     <li>
-                        <Link to="/">
+                        <Link to="/usuario">
                             <div className="content">
                                 <img src={usuario} alt="icone de usuario" />
                                 <span> Usuário </span>

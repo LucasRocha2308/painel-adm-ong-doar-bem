@@ -1,44 +1,22 @@
-body{
-    background-color: #E5E5E5;
-    overflow-x: hidden;
-}
+.support-panel{
+    padding: 2em;
 
-.main-content-space{
-    background-color: white;
-    margin: 3.3em 0 0 20em;
-    width: 75%;
-    height: 75vh;
-    border-radius: 30px;
-
-    .main-content{
-        padding: 2rem 2rem 2rem 4rem;
+    .main-text{
+    font-size: 1.3em;
+    line-height: 3rem;
     }
 
-    #search-user{
-        width: 30%;
-        padding: 5px;
-        border: 1px solid lightgray;
-        border-radius: 5px;
+    .chatbot-button{
+        cursor: pointer;
+        background-color: #6F6EA8;
+        color: white;
+        font-weight: 600;
+        font-size: 1em;
+        border: none;
+        padding: 1.3em;
     }
 
-    .users-table{
-        padding: 4em 2em 2em 0;
-
-        table{
-            width: 100%;
-            border: 1px solid lightgray;
-            border-collapse: collapse;
-
-            .icon{
-                margin: 1px 0 0 10px;
-            }
-
-            td, th{
-                border: 1px solid lightgray;
-                text-align: left;
-                padding: 8px;
-            }
-        }
+    .chatbot-button:hover{
+        background-color: #33325C;
     }
-
 }

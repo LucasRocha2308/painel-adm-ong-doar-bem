@@ -21,6 +21,12 @@ body{
         border-radius: 5px;
     }
 
+    .button-page {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
     .users-table{
         padding: 4em 2em 2em 0;
 
@@ -31,6 +37,12 @@ body{
 
             .icon{
                 margin: 1px 0 0 10px;
+            }
+
+            .info-separacao{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
 
             td, th{

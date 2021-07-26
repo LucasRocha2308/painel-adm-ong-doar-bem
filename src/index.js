@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-// import Providers from "./providers";
+import Providers from "./providers";
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Providers> */}
+    <Providers> 
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    {/* </Providers> */}
+    </Providers>
   </React.StrictMode>,
   document.getElementById("root")
 );

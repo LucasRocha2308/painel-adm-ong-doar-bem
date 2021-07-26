@@ -12,7 +12,7 @@ import {
     const [cart, setCart] = useState([]);
   
     useEffect(() => {
-      localStorage.setItem("cart", JSON.stringify(cart));
+      // localStorage.setItem("cart", JSON.stringify(cart));
     }, [cart]);
 
     const removeFromCart = (item) => {
