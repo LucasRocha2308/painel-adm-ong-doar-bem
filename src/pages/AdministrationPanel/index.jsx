@@ -1,6 +1,6 @@
 import HeaderPanel from "../../components/HeaderPanel";
 import MenuLateral from "../../components/MenuLateral";
-import { goToInfor } from "../../routes/coodination";
+import { goToCadastro } from "../../routes/coodination";
 
 // import ContentCard from "../../components/ContentCard";
 
@@ -30,7 +30,7 @@ const AdministrationPanel = () => {
                 <th>Nome<AiOutlineDown size={12} className="icon"/></th>
                 <th>Função<AiOutlineDown size={12} className="icon"/></th>
                 <th>Último Acesso<AiOutlineDown size={12} className="icon"/></th>
-                <th><button className="button-page " onClick={() => goToInfor(history)} ><AiOutlineUserAdd size={22} /></button></th>
+                <th><button className="button-page " onClick={() => goToCadastro(history)} ><AiOutlineUserAdd size={22} /></button></th>
               </tr>
               <tr>
                 <td>Jill</td>

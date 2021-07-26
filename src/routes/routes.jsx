@@ -8,7 +8,7 @@ import OngAdministration from "../pages/OngAdministration";
 import SupportAdministration from "../pages/SupportAdministration";
 import RegisterCampaign from "../pages/RegisterCampaign";
 
-import information from "../components/inforPage/inforPage";
+import Cadastro from '../pages/cadastroPage/CadastroPage'
 
 
 function AppRoutes() {
@@ -16,7 +16,7 @@ function AppRoutes() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={AdministrationPanel} />
-        <Route exact path="/information" component={information} />
+        <Route exact path="/cadastro" component={Cadastro} />
         <Route path="/" exact component={AdministrationPanel} />
         <Route path="/campanha" exact component={CampaignAdministration} />
         <Route path="/doador" exact component={DonorAdministration} />

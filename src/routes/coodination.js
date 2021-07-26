@@ -1,3 +1,3 @@
-export const goToInfor = (history) => {
-    history.push("/information")
+export const goToCadastro = (history) => {
+    history.push("/cadastro")
 }
