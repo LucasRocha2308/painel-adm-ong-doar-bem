@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter, Switch, Route } from "react-router-dom";
 import AdministrationPanel from "../pages/AdministrationPanel";
-// import CampaignAdministration from "../pages/CampaignAdministration";
+import CampaignAdministration from "../pages/CampaignAdministration";
 import DonorAdministration from "../pages/DonorAdministration";
 import OngAdministration from "../pages/OngAdministration";
 // import AcquisitionAdministration from "../pages/AcquisitionAdministration";
@@ -26,7 +26,7 @@ function AppRoutes() {
         <Route path="/" exact component={AdministrationPanel} />
         <Route exact path="/cadastro" component={Cadastro} />
         <Route path="/" exact component={AdministrationPanel} />
-        {/* <Route path="/campanha" exact component={CampaignAdministration} /> */}
+        <Route path="/campanha" exact component={CampaignAdministration} />
         <Route path="/doador" exact component={DonorAdministration} />
         <Route path="/ong" exact component={OngAdministration} />
         {/* <Route path="/aquisicao" exact component={AcquisitionAdministration} /> */}

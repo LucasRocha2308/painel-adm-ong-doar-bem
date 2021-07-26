@@ -1,5 +1,5 @@
 import React from 'react'
-import fotoUsuario from '../../assets/img/fotoUsuario.png'
+import Card from '../../constants/CardName';
 
 import './blankTitle.scss'
 
@@ -8,7 +8,9 @@ const BlankTitle = () => {
         <div className="title-space">
             <div className="title-content">
                 <h1>Texto Exemplo</h1>
-                <img src={fotoUsuario} alt="" />
+                <div>
+                    <Card />
+                </div>
                 <p>Nome do Treco</p>
             </div>
         </div>
