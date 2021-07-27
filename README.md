@@ -9,19 +9,20 @@ Lucas Rocha - Front End Developer
 
 Patrícia Maria - Product Manager
 
-Caio Manfred - Data Scientist
+Caio Manfredini - Data Scientist
 
 Elaine Cristina - Front End Developer
 
-Maria Serrão - Front End Developer
+Maria Serrão - Design UI/UX
 
 Jefferson Chebom - Data Scientist
 
 
-
-
 ## Layout Web
-![Doar Bem](https://user-images.githubusercontent.com/86628677/126920461-eeb2720d-5186-45ac-9a1f-20373907e2de.PNG)
+![loginPic](https://user-images.githubusercontent.com/34611147/127084539-6fd74bad-db18-459d-88d4-ca790cbe76fd.PNG)
+
+![adminPic](https://user-images.githubusercontent.com/34611147/127084665-aa0a5eef-b10a-4ead-ae70-29e8400d2e1a.PNG)
+
 
 
 # Tecnologias utilizadas
