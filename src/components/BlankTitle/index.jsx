@@ -7,11 +7,11 @@ const BlankTitle = () => {
     return (
         <div className="title-space">
             <div className="title-content">
-                <h1>Texto Exemplo</h1>
+                <h1>TEXTO HEADER EXEMPLO</h1>
                 <div>
                     <Card />
                 </div>
-                <p>Nome do Treco</p>
+                <p>NOME DE PERFIL EXEMPLO</p>
             </div>
         </div>
     )
